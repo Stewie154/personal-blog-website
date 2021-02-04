@@ -1,0 +1,54 @@
+@import "./global-styles.css";
+
+body {
+    background-color: #fff999;
+}
+
+.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    " hd hd hd hd "
+    " hd hd hd hd "
+    " sb main main main "
+    " sb main main main "
+    " sb main main main "
+    " sb main main main "
+    " sb main main main "
+    " sb main main main "
+    " sb main main main "
+    " sb main main main "
+    " sb main main main "
+    "ft ft ft ft";
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px orange;
+}
+
+header {
+    grid-area: hd;
+    background-color: red;
+}
+
+.sidebar {
+    grid-area: sb;
+    background-color: blue;
+}
+
+main {
+    grid-area: main;
+    background-color: palegreen;
+}
+
+footer {
+    grid-area: ft;
+    background-color: purple;
+}
+
