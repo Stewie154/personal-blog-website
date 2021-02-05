@@ -1,0 +1,48 @@
+/* main styling */ 
+main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px rgb(251, 247, 247);
+}
+.blog-card {
+    width: 30%;
+    background-color: #0f6acc;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.blog-card h3 {
+    font-size: 2em;
+    color:rgb(14, 13, 13);
+    text-decoration: underline;
+    margin: 5%;
+}
+.blog-card img {
+    width: 70%;
+    border-radius: 5px;
+    margin: 5%;
+}
+.blog-card p {
+    color:rgb(251, 247, 247);
+    text-align: center;
+    margin: 5%;
+}
+.blog-card button {
+    padding: 10px;
+    margin: 5%;
+    background-color: rgb(251, 247, 247);
+    color:rgb(14, 13, 13);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.blog-card button:hover {
+    background-color: rgb(14, 13, 13);
+    color: rgb(251, 247, 247);
+}
