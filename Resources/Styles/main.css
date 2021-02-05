@@ -46,3 +46,17 @@ main {
     background-color: rgb(14, 13, 13);
     color: rgb(251, 247, 247);
 }
+/* tablet screens */
+@media screen and (max-width: 768px) {
+    .blog-card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+/* mobile screens */
+@media screen and (max-width: 550px) {
+    .blog-card {
+        width: 90%;
+        margin: 10px;
+    }
+}

@@ -33,3 +33,9 @@
     color:rgb(251, 247, 247);
     text-decoration: underline;
 }
+
+@media screen and (max-width: 1100px) {
+    .sidebar {
+        display: none;
+    }
+}
