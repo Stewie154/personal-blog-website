@@ -37,26 +37,46 @@ body {
     "footer"
     "footer";
 }
-
+/* header styling*/
 header {
     grid-area: hd;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid rgb(251, 247, 247);
+    background-color: #1974D3;
 }
 header h1 {
     font-size: 4rem;
     text-decoration: underline;
     color: rgb(14, 13, 13);
 }
+header img {
+    width: 7%;
+    border: 1px solid rgb(14, 13, 13);
+    border-radius: 5px;
+}
+header button {
+    padding: 10px 15px;
+    background-color: rgb(251, 247, 247);
+    color:rgb(14, 13, 13);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+header button:hover {
+    background-color: rgb(14, 13, 13);
+    color: rgb(251, 247, 247);
+}
 
 
 
 
 
-
-
+/* footer styling*/
 footer {
     grid-area: footer;
     display: flex;
@@ -76,12 +96,15 @@ footer ul {
     justify-content: space-around;
     align-items: center;
 }
+footer ul a {
+    text-decoration: none;
+}
 footer ul li {
     font-size: 1.5rem;
-    color:rgb(14, 13, 13);
+    color: rgb(251, 247, 247);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 footer ul li:hover {
-    color:rgb(251, 247, 247);
+    color: rgb(14, 13, 13);
 }

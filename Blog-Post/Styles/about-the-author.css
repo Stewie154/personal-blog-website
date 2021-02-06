@@ -2,43 +2,71 @@
     grid-area: author;
     background-color: #1566bd;
 }
+
 .about-the-author h2 {
     font-size: 3em;
     text-decoration: underline;
     text-align: center;
     color: rgb(14, 13, 13);
 }
-.about-the-author .left-side {
-    /* background-color: yellow; */
-    
-}
-.about-the-author .left-side img {
-    width: 60%;
-}
-.about-the-author .left-side ul {
-    width: 50%;
-    list-style-type: none;
+
+.author-info-container {
+    width: 100%;
+    height: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-.about-the-author .left-side ul a {
-    cursor: pointer;
+
+.author-info-left {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.author-info-left img {
+    width: 70%;
+    border: 1px solid rgb(14, 13, 13);
+    border-radius: 5px;
+}
+.author-info-left h3 {
+    color:rgb(14, 13, 13);
+    font-size: 1.7rem;
+    text-decoration: underline;
+}
+.social-media-container {
+    width: 80%;
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.social-media-container a {
     text-decoration: none;
-    transition: 0.2s;
-    color:rgb(251, 247, 247);
-}
-.about-the-author .left-side ul a:hover {
-    color:rgb(14, 13, 13)
-}
-.about-the-author .right-side {
-    /* background-color: orange; */
-    justify-content: flex-start;
-}
-.about-the-author .right-side ul{
-   margin: 5%;
-}
-.about-the-author .right-side ul li {
+} 
+.social-media-container li {
     font-size: 1.5em;
-    padding: 5%;
+    color: rgb(251, 247, 247);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.social-media-container li:hover {
+    color:rgb(14, 13, 13);
+}
+
+.author-info-right {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author-info-right p {
+    color:rgb(251, 247, 247);
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5em;
 }
