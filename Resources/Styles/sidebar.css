@@ -7,6 +7,7 @@
     align-items: center;
     border: 1px solid rgb(251, 247, 247);
 }
+
 .sidebar h2 {
     font-size: 3rem;
     text-decoration: underline;
@@ -21,14 +22,17 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .links-container a {
     text-decoration: none;
 }
+
 .links-container li {
     color: rgb(14, 13, 13);
     transition: 0.2s ease-in-out;
     font-size: 1.5em;
 }
+
 .links-container li:hover {
     color:rgb(251, 247, 247);
     text-decoration: underline;
