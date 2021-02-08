@@ -37,6 +37,7 @@ body {
     "footer"
     "footer";
 }
+
 /* header styling*/
 header {
     grid-area: hd;
@@ -49,16 +50,19 @@ header {
     border-bottom: 1px solid rgb(251, 247, 247);
     background-color: #1974D3;
 }
+
 header h1 {
     font-size: 4rem;
     text-decoration: underline;
     color: rgb(14, 13, 13);
 }
+
 header img {
-    width: 7%;
+    width: 9%;
     border: 1px solid rgb(14, 13, 13);
     border-radius: 5px;
 }
+
 header button {
     padding: 10px 15px;
     background-color: rgb(251, 247, 247);
@@ -67,14 +71,35 @@ header button {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+
 header button:hover {
     background-color: rgb(14, 13, 13);
     color: rgb(251, 247, 247);
 }
 
+/*tablet screens */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-around;
+    }
+    header h1 {
+        /* margin-left: 100px; */
+    }
+    header img {
+        display: none;
+    }
+}
 
-
-
+/*mobile screens*/
+@media screen and (max-width: 550px) {
+    header h1 {
+        font-size: 2.4em;
+    }
+    header button {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+}
 
 /* footer styling*/
 footer {
@@ -85,10 +110,13 @@ footer {
     align-items: center;
     
 }
+
 footer h4 {
     font-size: 2em;
     text-decoration: underline;
+    text-align: center;
 }
+
 footer ul {
     width: 100%;
     list-style-type: none;
@@ -96,15 +124,28 @@ footer ul {
     justify-content: space-around;
     align-items: center;
 }
+
 footer ul a {
     text-decoration: none;
 }
+
 footer ul li {
     font-size: 1.5rem;
     color: rgb(251, 247, 247);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
+
 footer ul li:hover {
     color: rgb(14, 13, 13);
+}
+
+@media screen and (max-width: 550px) {
+    footer h4 {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    footer ul li {
+        font-size: 1.2rem;
+    }
 }

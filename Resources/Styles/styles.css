@@ -27,6 +27,7 @@ body {
     " sb main main main "
     "ft ft ft ft";
 }
+
 /*grid layout for tablet (removes useful links section, blog posts take up full width) */
 @media screen and (max-width: 1100px) {
     .grid-container {
@@ -45,6 +46,7 @@ body {
         "ft ft ft ft";
     }
 }
+
 /* grid layout for mobile, reduces size of header*/
 @media screen and (max-width: 550px) {
     .grid-container {
@@ -69,24 +71,29 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /*Header styling */
 header {
     grid-area: hd;
     border: 1px solid rgb(251, 247, 247);
 }
+
 header h1 {
     font-family: 'Sriracha', cursive;
     color: rgb(14, 13, 13);
     font-size: 4em;
     letter-spacing: 5px;
     text-decoration: underline;
+    text-align: center;
 }
+
 /*reduced font size for tablet*/
 @media screen and (max-width: 1100px) {
     header h1 {
         font-size: 3em;
     }
 }
+
 /*reduced font size for mobile*/
 @media screen and (max-width: 550px) {
     header h1 {
@@ -94,7 +101,6 @@ header h1 {
         letter-spacing: 0;
     }
 }
-
 
 /*Footer styling*/
 footer {
@@ -104,18 +110,22 @@ footer {
     align-items: center;
     border: 1px solid rgb(251, 247, 247);
 }
+
 footer h4 {
     color:rgb(251, 247, 247);
     letter-spacing: 5px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
+
 footer h4:hover {
     color:rgb(14, 13, 13);
 }
+
 footer a {
     text-decoration: none;
 }
+
 /*reduced sizing for mobile*/
 @media screen and (max-width: 550px) {
     footer h4 {
